@@ -34,13 +34,36 @@ require('mason-lspconfig').setup_handlers({
   function(server_name)
     require('lspconfig')[server_name].setup(lsp_config)
   end,
-  lua_ls = function()
+  ['lua_ls'] = function()
     require('lspconfig').lua_ls.setup(vim.tbl_extend('force', lsp_config, {
       settings = {
         Lua = {
           diagnostics = {
             globals = { 'vim' }
           }
+        }
+      }
+    }))
+  end,
+  ['solargraph'] = function()
+    require('lspconfig').solargraph.setup(vim.tbl_extend('force', lsp_config, {
+      settings = {
+        solargraph = {
+          diagnostics = true,
+          completion = true,
+          formatting = true,
+        }
+      }
+    }))
+  end,
+  ['gopls'] = function()
+    require('lspconfig').gopls.setup(vim.tbl_extend('force', lsp_config, {
+      settings = {
+        gopls = {
+          analyses = {
+            unusedparams = true,
+          },
+          staticcheck = true,
         }
       }
     }))

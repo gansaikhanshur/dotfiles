@@ -27,7 +27,6 @@ return require('packer').startup(function(use)
     'nvim-telescope/telescope.nvim', tag = '0.1.6',
     requires = { { 'nvim-lua/plenary.nvim' } }
   }
-  use 'neovim/nvim-lspconfig'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
@@ -39,4 +38,5 @@ return require('packer').startup(function(use)
   use 'saadparwaiz1/cmp_luasnip'
   use 'petertriho/cmp-git'
   use 'onsails/lspkind-nvim'
+  use 'castwide/solargraph'
 end)
