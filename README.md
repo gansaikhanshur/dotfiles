@@ -3,7 +3,7 @@
 Welcome to my dotfiles!
 
 ## Table of Contents
-- [Nvim Configuration](#configuration)
+- [Nvim Configuration](#nvim-configuration)
 
 ## Nvim Configuration
 
