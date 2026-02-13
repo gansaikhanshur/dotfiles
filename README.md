@@ -34,3 +34,6 @@ Use the Catppuccin Macchiato theme for Powerlevel10k by downloading the theme co
 
 curl -o ~/.p10k.zsh https://raw.githubusercontent.com/tolkonepiu/catppuccin-powerlevel10k-themes/refs/heads/main/themes/.p10k-pure-catppuccin-macchiato.zsh
 
+## 6. Install colorls
+
+https://github.com/athityakumar/colorls
